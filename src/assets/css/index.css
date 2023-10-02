@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container-mobile {
+  max-width: 375px;
+}
+
+.navbar {
+  background-image: url("..\images\image-hero-desktop.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 600px;
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    background-image: url("..\images\image-hero-mobile.jpg");
+  }
+
+  /* .nav-items {
+    display: none;
+  }
+
+  .nav-items.active {
+    display: block;
+  }
+
+  .navbar.active,
+  .nav-items.active {
+    display: block;
+  } */
+}
